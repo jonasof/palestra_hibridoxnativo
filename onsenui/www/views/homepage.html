@@ -1,0 +1,42 @@
+<ons-page ng-controller="HomepageController">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Voltar</ons-back-button>
+        </div>
+        <div class="center">Homepage</div>
+    </ons-toolbar>
+
+    <section style="padding: 10px">
+
+            <h1>Fatec SP</h1>
+
+            <p>
+                A Faculdade de Tecnologia de São Paulo (FATEC-SP) é uma faculdade
+                pública de ensino superior do Centro Estadual de Educação Tecnológica
+                Paula Souza. Localiza-se no bairro do Bom Retiro, em São Paulo.
+            </p>
+
+            <p>
+                É também comumente conhecida como FATEC Bom Retiro ou FATEC Tiradentes,
+                ou simplesmente FATEC São Paulo.
+            </p>
+
+            <ons-button ng-click="navi.pushPage('views/saiba.html')">
+                Saiba Mais
+            </ons-button>
+
+            <p>
+                <input ng-model="numero1" class="text-input text-input--underbar" placeholder="Número 1" />
+                +
+                <input ng-model="numero2" class="text-input text-input--underbar" placeholder="Número 2" />
+                =
+            </p>
+
+            <p>
+                <ons-button ng-click="calcular()">Calcular</ons-button>
+
+                <input ng-model="resultado" readonly="" class="text-input text-input--underbar"/>
+            </p>
+
+    </section>
+</ons-page>
